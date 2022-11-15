@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600;700&display=swap");
+html,
+body {
+  background: #FFF !important;
+  height: 100%;
+}
+
+html .btn,
+body .btn {
+  font-size: 16px;
+  background-color: #0E1734;
+  color: #FFF;
+}
+
+html .btn:hover,
+body .btn:hover {
+  color: #0E1734;
+  background-color: #FFF;
+  border: 1px solid #0E1734;
+}
+
+html .btn:last-child,
+body .btn:last-child {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+
+html .footer-bg,
+body .footer-bg {
+  background-color: #0B265A;
+}
+
+header {
+  font-family: 'Inter';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0;
+}
+
+header ul {
+  margin-bottom: 0.5rem;
+}
+
+header .nav-link {
+  padding: 0 0.5rem;
+  color: #192252;
+}
+
+header .nav-link:hover {
+  color: #848FAC;
+}
+
+@media screen and (max-width: 768px) {
+  header .nav-link {
+    padding: 2rem 0.5rem;
+  }
+}
+
+main {
+  margin: 80px 0;
+}
+
+main .section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 80px 0;
+}
+
+@media screen and (max-width: 350px) {
+  main .section {
+    margin: 40px 0;
+  }
+}
+
+main .section__header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  color: #192252;
+}
+
+@media screen and (max-width: 992px) {
+  main .section__header {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .section__header {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  main .section__header {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+main .section__text {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #848FAC;
+  margin: 32px 0;
+}
+
+@media screen and (max-width: 768px) {
+  main .section__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 16px 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  main .section__text {
+    font-size: 10px;
+    line-height: 18px;
+    margin: 12px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main .section__col-img {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
+main .section-center {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #848FAC;
+  margin-top: 160px;
+}
+
+@media screen and (max-width: 350px) {
+  main .section-center {
+    margin: 15px 0;
+  }
+}
+
+main .btn {
+  width: 9rem;
+  height: 51px;
+}
+
+main .card__header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+  margin: 32px 0 16px 0;
+}
+
+main .card__text {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #848FAC;
+  margin-bottom: 32px;
+}
+
+main .card__link {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #424F7B;
+  text-decoration: none;
+}
+
+main .card__link:hover {
+  color: #848FAC;
+}
+
+@media screen and (max-width: 576px) {
+  main .card-col__img {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main .card-col {
+    margin-bottom: 3rem;
+  }
+}
+
+footer {
+  font-family: 'Inter';
+  font-size: 16px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 120px 0;
+}
+
+footer .col {
+  margin-bottom: 1rem;
+}
+
+footer .col:first-child {
+  margin-right: auto;
+}
+
+footer ul li {
+  margin-bottom: 1rem;
+}
+
+footer .nav-link {
+  padding: 0;
+  color: #D9DBDE;
+}
+
+footer p {
+  color: #D9DBDE;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+footer p:first-child {
+  font-weight: 700;
+  color: #FFF;
+}
+/*# sourceMappingURL=index.css.map */

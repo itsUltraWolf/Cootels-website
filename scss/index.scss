@@ -1,0 +1,237 @@
+@import "fonts";
+
+$card-header_black: #000;
+$button_black: #0E1734;
+$footer_blue: #0B265A;
+$header_dark-blue: #192252;
+$footer_light-grey: #D9DBDE;
+$white: #FFF;
+$text_light-blue: #848FAC;
+$text_semi-dark-blue: #424F7B;
+
+html,
+body {
+    background: $white  !important;
+    height: 100%;
+
+    .btn {
+        font-size: 16px;
+        background-color: $button_black;
+        color: $white;
+
+        &:hover {
+            color: $button_black;
+            background-color: $white;
+            border: 1px solid $button_black;
+        }
+
+        &:last-child {
+            align-content: flex-end;
+        }
+    }
+
+    .footer-bg {
+        background-color: $footer_blue;
+    }
+}
+
+header {
+    font-family: 'Inter';
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+
+    ul {
+        margin-bottom: 0.5rem;
+    }
+
+    .nav {
+        &-link {
+            padding: 0 0.5rem;
+
+            color: $header_dark-blue;
+
+            &:hover {
+                color: $text_light-blue;
+            }
+
+            @media screen and (max-width: 768px) {
+                padding: 2rem 0.5rem;
+            }
+        }
+    }
+
+
+}
+
+main {
+    margin: 80px 0;
+
+    .section {
+        align-items: center;
+        margin: 80px 0;
+
+        @media screen and (max-width: 350px) {
+            margin: 40px 0;
+        }
+
+        &__header {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 72px;
+            color: $header_dark-blue;
+
+            @media screen and (max-width: 992px) {
+                font-size: 36px;
+                line-height: 48px;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            @media screen and (max-width: 458px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+
+        &__text {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: $text_light-blue;
+            margin: 32px 0;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+                line-height: 20px;
+                margin: 16px 0;
+            }
+
+            @media screen and (max-width: 520px) {
+                font-size: 10px;
+                line-height: 18px;
+                margin: 12px 0;
+            }
+        }
+
+        &__col-img {
+            @media screen and (max-width: 576px) {
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &-center {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: $text_light-blue;
+            margin-top: 160px;
+
+            @media screen and (max-width: 350px) {
+                margin: 15px 0;
+            }
+        }
+    }
+
+    .btn {
+        width: 9rem;
+        height: 51px;
+    }
+
+    .card {
+        &__header {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            color: $card-header_black;
+            margin: 32px 0 16px 0;
+        }
+
+        &__text {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            color: $text_light-blue;
+            margin-bottom: 32px;
+        }
+
+        &__link {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+
+            color: $text_semi-dark-blue;
+            text-decoration: none;
+
+            &:hover {
+                color: $text_light-blue;
+            }
+        }
+
+        &-col {
+            &__img {
+                @media screen and (max-width: 576px) {
+                    text-align: center;
+                }
+            }
+
+            @media screen and (max-width: 576px) {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}
+
+footer {
+    font-family: 'Inter';
+    font-size: 16px;
+
+    align-items: flex-start;
+    padding: 120px 0;
+
+    .col {
+        margin-bottom: 1rem;
+
+        &:first-child {
+            margin-right: auto;
+        }
+    }
+
+    ul {
+        li {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .nav {
+        &-link {
+            padding: 0;
+
+            color: $footer_light-grey;
+        }
+    }
+
+    p {
+        color: $footer_light-grey;
+        line-height: 28px;
+        font-weight: 400;
+
+        &:first-child {
+            font-weight: 700;
+            color: $white;
+        }
+    }
+}

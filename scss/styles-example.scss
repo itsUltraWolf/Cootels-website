@@ -1,0 +1,30 @@
+@import url("");
+
+// Файл обнуляющих стилей
+/*@import "nullstyle.scss";*/
+
+@font-face {
+    font-family: "";
+    src: url(../fonts) format("truetype");
+}
+
+// Переменные
+$variable_1: 100px;
+$variable_2: #000;
+$variable_3: #fff;
+
+// Шаблон и подключение (пример)
+.tplborder {
+    font-size: 100px;
+    border-bottom: 5px dashed red;
+}
+
+/*@extend .tplborder;*/
+
+// Миксин
+@mixin fontz($f, $c) {
+    font-size: $f;
+    color: $c;
+}
+
+/*@include fontz(80px, green);*/

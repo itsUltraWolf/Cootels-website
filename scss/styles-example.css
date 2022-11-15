@@ -1,0 +1,13 @@
+@import url("");
+/*@import "nullstyle.scss";*/
+@font-face {
+  font-family: "";
+  src: url(../fonts) format("truetype");
+}
+.tplborder {
+  font-size: 100px;
+  border-bottom: 5px dashed red;
+}
+
+/*@extend .tplborder;*/
+/*@include fontz(80px, green);*/
